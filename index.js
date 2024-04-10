@@ -1,6 +1,5 @@
 import { configDotenv } from "dotenv";
 configDotenv();
-import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
 import runChat from "./gemini.config.js";
 import app from "./app.js";
 

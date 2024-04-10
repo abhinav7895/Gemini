@@ -1,5 +1,5 @@
 const answerElement = document.getElementById("prompt-answer");
-
+const image = document.getElementById("ai-img");
 
 // const applyFormatting = (text) => {
 //     let formattedText = text.replace(/\*{2}(.*?)\*{2}/g, '<strong>$1</strong>')
@@ -26,13 +26,16 @@ function typeWriterEffect(text, elementId, speed) {
     answerElement.innerHTML = "";
 
     const typeInterval = setInterval(() => {
+        image.classList.add("rotate-img");
         answerElement.innerHTML += words[i] + " ";
         i++;
         if (answerElement.offsetHeight > (window.innerHeight - 100)) {
             scrollToBottom();
         }
         if (i >= words.length) {
+            image.classList.remove("rotate-img");
             clearInterval(typeInterval);
+
         }
     }, speed);
 }
