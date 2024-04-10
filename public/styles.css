@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: black;
+    width: 100vw;
+    height: 100%;
+    color: white;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.heading {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.heading-ai {
+    background-image: linear-gradient(to left, rgb(106, 106, 227), rgb(239, 60, 60));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+.main_container {
+    width: 100%;
+    max-width: 900px;
+    background-color: rgb(2, 25, 43);
+    min-height: 100px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(67, 67, 67);
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.ai-img {
+    animation: rotateImage 7s linear infinite;
+    transition: transform 0.5s ease;
+    width: 35px;
+  }
+
+.prompt-box {
+    width: 100%;
+    outline: none;
+    padding-inline : 10px;
+    padding-block : 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: rgb(215, 213, 213);
+    border: 1px solid gray;
+    background-color: rgb(0, 5, 9);
+}
+
+.prompt-box:focus {
+    border-color: rgb(193, 191, 191);
+}
+
+.submit_btn {
+    width: 50px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 45, 120);
+    border: 1px solid gray;
+    color: white;
+    cursor: pointer;
+}
+
+.submit_btn:hover {
+    background-color: rgb(7, 56, 155);
+    border-color: rgb(193, 191, 191);
+}
+
+.prompt-answer {
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: .1em;
+}
+
+@keyframes rotateImage {
+    from {
+      transform: rotate(0deg);
+      opacity: 100%;
+    }
+    to {
+      transform: rotate(360deg);
+      opacity: 80%;
+    }
+  }
+  
